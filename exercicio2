@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**/
+int main(){
+	char letra;
+	int vogal=0, cont=10, consoantes=0;
+	while (cont>=1){
+		printf ("digite uma letra\n");
+		scanf ("%c", &letra);
+		getchar ();
+		if (letra == 'a'){
+		vogal++;
+		
+		}
+		if (letra == 'e'){
+		vogal++;
+		
+		}
+		if (letra == 'i'){
+		vogal++;
+		
+		}
+		if (letra == 'o'){
+		vogal++;
+		
+		}
+		if (letra == 'u'){
+		vogal++;
+		
+		}
+		
+		cont--;	
+	}
+	consoantes=10-vogal;
+	printf ("numero de consoantes %i", consoantes);	
+	return 0;
+	
+
+	
+			
+
+	
+	
+
+
+}
