@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**/
+int main(){
+	int loop=10, mediafinal=0, aprovado=0, n1, n2, n3, n4;
+	while (loop>0){
+		printf("4 notas do aluno\n");
+		scanf ("%i%i%i%i", &n1, &n2, &n3, &n4);
+		mediafinal=(n1+n2+n3+n4)/4;
+		if (mediafinal>=7){
+			aprovado++;
+		}
+		loop--;
+	}
+	
+	printf ("aprovados:%i", aprovado);
+		return 0;
+
+	
+			
+
+	
+	
+
+
+}
