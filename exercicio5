@@ -1,0 +1,25 @@
+int main (){
+	int n=0, soma=0, abaixo=0, cont=0, cont2=0, media=0;
+	while (1){
+		printf ("Digite uma nota ou -1 para parar\n");
+		scanf ("%i",&n);
+		if (n>0){
+			soma=soma+n;
+			cont2++;
+			cont++;
+			
+			if(n<7){
+				abaixo++;
+			}
+				
+			
+			}
+else {
+	media=soma/cont2;
+printf("\nNumero de notas:%i\nSoma das notas:%i\nMedia das notas:%i\nNumero de notas menor que 7:%i\n", cont, soma, media, abaixo);	
+}			
+			
+			
+		}
+		return 0;
+	}	
