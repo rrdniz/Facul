@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int idade1, idade2, idade3, idade4, idade5;
+	float altura1, altura2, altura3, altura4, altura5;
+	/*
+	primeira pessoa
+	*/
+	printf ("Digite a altura da 1 pessoa:\n");
+	scanf ("%f", &altura1);
+	printf ("Digita a idade da 1 pessoa:\n");
+	scanf ("%i", &idade1);
+	/*
+	segunda pessoa
+	*/
+	printf ("Digite a altura da 2 pessoa:\n");
+	scanf ("%f", &altura2);
+	printf ("Digita a idade da 2 pessoa:\n");
+	scanf ("%i", &idade2);
+	/*
+	terceira pessoa
+	*/
+	printf ("Digite a altura da 3 pessoa:\n");
+	scanf ("%f", &altura3);
+	printf ("Digita a idade da 3 pessoa:\n");
+	scanf ("%i", &idade3);
+	/*
+	quarta pessoa
+	*/
+	printf ("Digite a altura da 4 pessoa:\n");
+	scanf ("%f", &altura4);
+	printf ("Digita a idade da 4 pessoa:\n");
+	scanf ("%i", &idade4);
+	/*
+	quinta pessoa
+	*/
+	printf ("Digite a altura da 5 pessoa:\n");
+	scanf ("%f", &altura5);
+	printf ("Digita a idade da 5 pessoa:\n");
+	scanf ("%i", &idade5);
+		
+printf ("altura das pessoas de 5 a 1: %.2f, %.2f, %.2f, %.2f, %.2f \n", altura5, altura4, altura3, altura2, altura1);
+printf ("idade das pessoas de 5 a 1: %i, %i, %i, %i, %i \n", idade5, idade4, idade3, idade2, idade1);
+
+	
+	return 0;
+}
