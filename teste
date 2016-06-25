@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main (){
+	float resultado, media, salto, salto2;
+	for (salto=1; salto <=5; salto++)
+	{
+		printf("Coloque aqui as 5 distancias:\n", salto);
+		scanf("%f", &salto2);
+	        
+	}
+	
