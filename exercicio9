@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int i, lado1=0, lado2=0, lado3=0, lado4=0, lado5=0, lado6=0, dado=0;
+    printf("Numeros gerados:\n");
+    srand( (unsigned)time(NULL) );
+    for(i=1 ; i <= 100 ; i++){
+dado=(rand() % 6);
+      printf("%d\n",dado);
+      
+    if (dado==1){
+		lado1++;
+	}
+	if (dado==2){
+		lado2++;
+	}
+	if (dado==3){
+		lado3++;
+	}
+	if (dado==4){
+		lado4++;
+	}
+	if (dado==5){
+		lado5++;
+	}
+	if (dado==6){
+		lado6++;
+	}
+	}
+printf("%d vezes a face com um\n", lado1);
+printf("%d vezes a face com dois\n", lado2);
+printf("%d vezes a face com tres\n", lado3);
+printf("%d vezes a face com quatro\n", lado4);
+printf("%d vezes a face com cinco\n", lado5);
+printf("%d vezes a face com seis\n", lado6);
+ return 0;	
+}
+
+	
