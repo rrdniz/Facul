@@ -1,7 +1,7 @@
 int main(int argc, char *argv[]) {
 	int n=0, loop=0, salto1=0, salto2=0, salto3=0, salto4=0, salto5=0, primeira_media=0, nova_media=0;
 	while (1){
-		printf("Gostaria de contar um atleta? Digite um numero. (-1 para parar)\n");
+		printf("Digite o numero do atleta. (-1 para parar)\n");
 	scanf("%i", &loop);
 	if (loop==-1){
 		printf("A maior media foi de %i, somados %i atletas", primeira_media, n);
@@ -9,17 +9,29 @@ int main(int argc, char *argv[]) {
 		
 	}
 	else{
-		printf("\nQual o valor da distancia dos cincos saltos?\n");
-		scanf("%i%i%i%i%i", &salto1, &salto2, &salto3, &salto4, &salto5);
+		printf("\nPrimeiro Salto:\n");
+		scanf("%i", &salto1);
+		printf("\nSegundo Salto:\n");
+		scanf("%i", &salto2);
+		printf("\nTerceiro Salto:\n");
+		scanf("%i", &salto3);
+		printf("\nQuarto Salto:\n");
+		scanf("%i", &salto4);
+		printf("\nQuinto Salto:\n");
+		scanf("%i", &salto5);
+		
 		if (salto1<0 || salto2<0 || salto3<0 || salto4<0 || salto5<0 ){
 			printf("Erro\n");
 		}
 		else {
+			printf ("Resultado final:\n");
 			nova_media=(salto1+salto2+salto3+salto4+salto5)/5;
-		printf("Media do atleta foi de: %i\n", nova_media);
+		printf("A media do atleta foi de: %i\n", nova_media);
 		if (nova_media>primeira_media){
 			primeira_media=nova_media;
 		}
 		n++;
 		}
 	}
+}
+}
