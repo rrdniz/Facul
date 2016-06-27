@@ -1,0 +1,68 @@
+int main (){
+	int voto, c1=0, c2=0, c3=0, c4=0, total_votos=0, nulo=0, branco=0;
+	while (1){
+	
+	printf ("Eleicoes 2016\nDigite o numero do seu candidato:\n");
+	scanf ("%i", &voto);
+	
+	if (voto == 0){
+		printf("\nNumero de Eleitores: %i\nNumero de votos para o candidato:\nCandidato um: %i\nCandidato dois: %i\nCandidato tres: %i\nCandidato quatro: %i\nVoto Nulo: %i\nVoto em Branco: %i", total_votos, c1, c2, c3, c4, nulo, branco );
+		return 0;
+	}
+		
+		/* Candidato 1 */
+		
+    if (voto==1){
+		  c1++;
+		  total_votos++;
+	}
+		
+		/* Candidato 2 */
+		
+		if (voto==2){
+		  c2++;
+		  total_votos++;
+	}
+		
+		/* Candidato 3 */
+			
+		
+		if (voto==3){
+		  c3++;
+		  total_votos++;
+	}
+			
+		/* Candidato 4 */
+		
+		if (voto==4){
+		  c4++;
+		  total_votos++;
+	}
+			
+		/* Candidato 5 */
+		
+		if (voto==5){
+		  nulo++;
+		  total_votos++;
+	}
+			
+		/* Candidato 6 */
+		
+		if (voto==6){
+		  branco++;
+		  total_votos++;
+	}
+			
+		/* ERRO */
+		
+		if (voto<0 || voto>6){
+		printf ("Seu voto foi invalido, tente novamente\n");
+	}
+	
+}
+
+return 0;
+}
+
+
+
