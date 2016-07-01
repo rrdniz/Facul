@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+ 
+int main(int argc, char *argv[]) {
+    /*
+        GRUPOS DE SALARIO
+    */
+   
+    int salarioEntre200e499 = 0,salarioEntre500e899 = 0,salarioEntre900e999 = 0,salarioMaisDe1000 = 0;
+   
+    int contador;
+    double vendas;
+   
+    for(contador = 0; contador < 10; contador++){
+       
+        printf("Me de quanto o funcionario %d vendeu: ", (contador+1));
+        scanf("%lf", &vendas);
+       
+        /*
+            vendas = 1
+            x = 0.09
+           
+            x = vendas * 0.09
+           
+        */
+       
+        double quantoOManoloVendeu = 200.00 + (vendas * 0.09);
+       
+        if(quantoOManoloVendeu < 499.00 && quantoOManoloVendeu > 200.00){
+            salarioEntre200e499++;
+        }else if(quantoOManoloVendeu < 899.00 && quantoOManoloVendeu > 500.00){
+            salarioEntre500e899++;
+        }else if(quantoOManoloVendeu < 999.00 && quantoOManoloVendeu > 900.00){
+            salarioEntre900e999++;
+        }else{
+            salarioMaisDe1000++;
+        }
+       
+    }
+   
+    printf("[R$200 - R$499] %d \n", salarioEntre200e499);
+    printf("[R$500 - R$899] %d \n", salarioEntre500e899);
+    printf("[R$900 - R$999] %d \n", salarioEntre900e999);
+    printf("[R$1000] %d \n", salarioMaisDe1000);
+   
+   
+    return 0;
+}
