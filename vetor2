@@ -1,0 +1,26 @@
+int main(int argc, char *argv[]) {
+	int i;
+	float vet[10], x, y;
+	
+	for(i=0; i<10; i++){
+	    scanf("%f", &vet[i]);
+	}
+	    
+	x=vet[0];
+	y=vet[0];
+	    
+	for (i=0; i<10; i++){
+	
+	 if (x>vet[i]){
+	 x=vet[i];
+	 }
+	 
+	 if(y<vet[i]){
+	 y=vet[i];	
+}
+	     
+}
+printf ("%.0f, %.0f", x, y);
+
+
+}
