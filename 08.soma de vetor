@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main ( void ) {
+	int a[10], b[10], soma = 0, i;
+
+	// pega valores
+	for ( i = 0; i < 10; i++ ) {
+		scanf ( "%d", &a[i] );
+	}
+	
+	// pega valores
+	for ( i = 0; i < 10; i++ ) {
+		scanf ( "%d", &b[i] );
+	}
+	
+	// calcula soma e mostra soma
+	for ( i = 0; i < 10; i++ ){
+	     soma += a[i]+b[i];
+
+	}
+	printf ( "%d", soma );
+
+
+	return 0;
+}
