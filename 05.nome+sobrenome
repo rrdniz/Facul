@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+	while(1){
+	int y=0;
+	char nome[50], sobre[50], completo[100];
+	gets(nome);
+	if (nome[0]=='0')
+	{
+		return 0;
+	}
+	gets(sobre);
+	if (sobre[0]=='0'){
+		return 0;
+	}
+	printf("%s %s\n", nome, sobre);
+	}
+
+}
