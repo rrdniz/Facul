@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int x, y, total=0;
+	for(y=1; y!=6; y++){
+		scanf("%d", &x);
+		if(x<0){
+			total++;
+		}
+	}
+	printf("%d", total);
+	return 0;
+}
