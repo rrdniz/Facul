@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	int copia;
+	while (1){
+		scanf("%i", &copia);
+		if (copia==0){
+				return 0;
+		}
+		if (copia<=150){
+			printf("A\n");
+		}
+		if (copia>150 && copia<=162){
+			printf("B\n");
+		}
+		if (copia>162) {
+			printf("C\n");
+		}
+		
+	}
+return 0;
+}
