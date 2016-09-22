@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char s1[10]= {"Me"};
+	char s2[10]= {"Salva"};
+	
+	//comparação
+	int cmp = strcmp (s1, s2);
+	printf ("strcmp: %d \n", cmp);
+	
+	//concatenar (juntar) 
+	strcat (s1,s2);
+	printf ("strcat: %d \n", s1);
+	
+	//tamanho da string
+	int len = strlen (s1);
+	printf ("strlen: %d \n", len);
+	
+	//copia
+	char copia [10];
+	strcpy (copia, s1);
+	printf ("strcpy: %s \n", copia);
+	
+	print ("terceiro caracter: %c", s1[2]);
+		
+	return 0;
+}
