@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+void naoPrimo(){
+	printf("0\n");
+}
+
+void simPrimo(){
+	printf("1\n");
+}
+
+int ler(){
+	int x = 0;
+	scanf("%d", &x);
+	return x;
+}
+
+
+
+int main(int argc, char *argv[]) {
+
+	while(1){
+		int numeroAAnalizar = ler();
+		
+		if(numeroAAnalizar == 0){
+			break;
+		}else if(numeroAAnalizar == 1){
+			naoPrimo();
+			continue;
+		}else if(numeroAAnalizar == 2){
+			simPrimo();
+			continue;
+		}
+		
+		int resultado = 1, contador = 0;
+		
+		
+		for(contador = 2; contador < numeroAAnalizar; contador++){
+			if((numeroAAnalizar % contador) == 0){
+				resultado = 0; //Resultado == 0 nao é primo
+				break;
+			}
+		}
+		
+		if(resultado == 0){
+			naoPrimo();
+		}else{
+			simPrimo();
+		}
+		
+		
+	}
+
+
+
+
+
+
+	return 0;
+}
